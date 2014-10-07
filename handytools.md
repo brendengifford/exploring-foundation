@@ -12,9 +12,13 @@ VIM help:
 
 http://www.openvim.com/tutorial.html
 
-Cheatsheet:
+VIM Cheatsheet:
 
 http://vim.wikia.com/wiki/Tutorial
+
+Git commands:
+
+http://git-scm.com/docs
 
 GitHub markup styling for README files:
 

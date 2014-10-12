@@ -23,3 +23,7 @@ http://git-scm.com/docs
 GitHub markup styling for README files:
 
 https://github.com/github/markup/tree/master#html-sanitization
+
+Lots of Git/Github tutorials and stuff:
+
+https://help.github.com/articles/what-are-other-good-resources-for-learning-git-and-github/

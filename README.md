@@ -1,6 +1,8 @@
 HBSupport
 =========
 
+<h2>First Meeting Wednesday 10/15 6PM @ The Blue Room</h2>
+
 Git to know you
 
 Things to do for the group:

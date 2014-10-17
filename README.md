@@ -1,7 +1,9 @@
 HBSupport
 =========
 
-<h2>First Meeting Wednesday 10/15 6PM @ <a href="https://www.google.com/maps/place/8145+SE+82nd+Ave,+Portland,+OR+97266/@45.463528,-122.5793946,15z/data=!4m2!3m1!1s0x54959fe526122559:0x9fa82d6cbfc14409" target="_blank">The Blue Room</a></h2>
+<h2>Trello: https://trello.com/hip3</h2>
+
+<s><h2>First Meeting Wednesday 10/15 6PM @ <a href="https://www.google.com/maps/place/8145+SE+82nd+Ave,+Portland,+OR+97266/@45.463528,-122.5793946,15z/data=!4m2!3m1!1s0x54959fe526122559:0x9fa82d6cbfc14409" target="_blank">The Blue Room</a></h2></s>
 
 Git to know you
 

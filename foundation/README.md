@@ -6,4 +6,5 @@ Foundation: Research Spike
 
 <ul>
 	<li><b>PRO:</b> Has a JS slider built into it</li>
+	<li><b>PRO:</b> Built in responsive design.</li>
 </ul>

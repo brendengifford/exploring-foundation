@@ -1,0 +1,5 @@
+#IGNORE THE IGNORE FOLDER
+/foundation/ignore/
+
+#Ignore these stupid things too
+.DS_Store

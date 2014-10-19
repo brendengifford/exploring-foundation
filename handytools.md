@@ -1,11 +1,35 @@
 <h2>Tools</h2>
 
-Clients for git management:
+<strong>Clients for git management:</strong>
 
 https://windows.github.com/
 
 https://mac.github.com/
 
+<strong>Sublime Text 2 Package, Emmet:</strong>
+
+<ul>
+<li>
+First, install Package Control:<br>
+https://sublime.wbond.net/installation#st2
+</li>
+<li>
+Then, install Emmet:<br>
+https://sublime.wbond.net/packages/Emmet
+</li>
+<li>
+Then, check out some things it can do:<br>
+http://docs.emmet.io/abbreviations/lorem-ipsum/<br>
+http://docs.emmet.io/actions/expand-abbreviation/<br>
+http://docs.emmet.io/css-abbreviations/gradients/<br>
+http://docs.emmet.io/css-abbreviations/fuzzy-search/<br>
+http://docs.emmet.io/actions/go-to-pair/<br>
+</li>
+<li>
+Bonus cheat sheet:<br>
+http://docs.emmet.io/cheat-sheet/
+</li>
+</ul>
 <h2>Reference</h2>
 
 VIM help:

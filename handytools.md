@@ -32,7 +32,7 @@ http://docs.emmet.io/cheat-sheet/
 </ul>
 
 <strong>ST2 Package:</strong>
-Prettify (great for pulling apart minified stuff):
+Prettify (great for pulling apart minified stuff):<br>
 https://sublime.wbond.net/packages/HTML-CSS-JS%20Prettify
 
 <h2>Reference</h2>

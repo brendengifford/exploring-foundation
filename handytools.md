@@ -31,8 +31,8 @@ http://docs.emmet.io/cheat-sheet/
 </li>
 </ul>
 
-<strong>ST2 Package:</strong>
-Prettify (great for pulling apart minified stuff):<br>
+<strong>ST2 Package, Prettify:</strong><br>
+Great for pulling apart minified stuff or otherwise keeping code easy to read.<br>
 https://sublime.wbond.net/packages/HTML-CSS-JS%20Prettify
 
 <h2>Reference</h2>

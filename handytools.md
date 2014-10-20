@@ -30,6 +30,11 @@ Bonus cheat sheet:<br>
 http://docs.emmet.io/cheat-sheet/
 </li>
 </ul>
+
+<strong>ST2 Package:</strong>
+Prettify (great for pulling apart minified stuff):
+https://sublime.wbond.net/packages/HTML-CSS-JS%20Prettify
+
 <h2>Reference</h2>
 
 VIM help:

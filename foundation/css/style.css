@@ -1,0 +1,214 @@
+body {
+	background-color: rgb(96%, 96%, 96%);
+}
+.logo {
+	font-family: Roboto, sans-serif;
+	font-size: 3em;
+	margin-top: 20px;
+	margin-bottom: 0;
+	letter-spacing: -5px;
+}
+.logo span:first-child {
+	font-family: Roboto, sans-serif;
+	font-weight: 900;
+}
+.logo span:nth-child(2) {
+	color: #71b810;
+	font-family: Roboto, sans-serif;
+	font-weight: 100;
+}
+.logo + p {
+	color: #8B8B8B;
+	margin-top: -1em;
+	font-size: 0.5em; 
+}
+.tool-bar {
+	margin-top: 25px;
+	float: right;
+}
+.tool-bar li {
+	padding-left: .3rem;
+	padding-right: .3rem;
+	margin:0;
+	border-right: 1px solid #ddd;
+}
+.tool-bar li:last-child {
+	border: none;
+	padding-right: 0;
+}
+.tool-bar li a {
+	padding: inherit;
+	text-transform: uppercase;
+	font-size: 9px;
+	font-weight: bold;
+	color: black;
+}
+.tool-bar li:first-child a {
+	color: #71b810;
+}
+.search input[type="text"] {
+	width:50%;
+	float: right;
+}
+.search .button {
+	height: 2.85em;
+	padding-top: 0.8em;
+	padding-left: 0.7em;
+	width: 4.5em;
+	float: right;
+}
+.shopping-cart-icon {
+	position: absolute;
+	top: 35px;
+	right: 15px;
+}
+.shopping-cart-icon img {
+	width: 75px;
+	height: 75px;
+}
+.nav-wrap {
+	/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(bottom, #3B780C 0%, #71B70F 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(bottom, #3B780C 0%, #71B70F 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(bottom, #3B780C 0%, #71B70F 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #3B780C), color-stop(1, #71B70F));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(bottom, #3B780C 0%, #71B70F 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to top, #3B780C 0%, #71B70F 100%);
+	height: 3.75em;
+}
+.main-nav {
+	margin-left: 3px;
+}
+.main-nav .button-group.even-6 li, .main-nav .button-group > li {
+	float: none;
+	margin-right: -3px;
+}
+.main-nav .button-group.even-6 li .button {
+	padding-top: 1.1rem;
+	padding-bottom: 1.12rem;
+	font-size: 1.125rem;
+	margin: 0;
+	border-width: 1px;
+	border: none;
+	border-left: 1px solid #388505;
+	font-family: Roboto, sans-serif;
+	font-weight: 100;
+}
+.main-nav .button-group.even-6 li:last-child .button {
+	border-right: 1px solid #388505;
+}
+.button {
+	/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(bottom, #3B780C 0%, #71B70F 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(bottom, #3B780C 0%, #71B70F 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(bottom, #3B780C 0%, #71B70F 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #3B780C), color-stop(1, #71B70F));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(bottom, #3B780C 0%, #71B70F 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to top, #3B780C 0%, #71B70F 100%);
+}
+.button:hover {	
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(bottom, #366D0B 0%, #67A60E 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(bottom, #366D0B 0%, #67A60E 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(bottom, #366D0B 0%, #67A60E 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #366D0B), color-stop(1, #67A60E));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(bottom, #366D0B 0%, #67A60E 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to top, #366D0B 0%, #67A60E 100%);
+}
+.current {
+	background: rgb(24%, 57%, 2%);
+}
+.content-wrap {
+	padding:50px;
+	background-image: url('http://i.imgur.com/MlBJrxT.jpg');
+	background-size: cover;
+}
+.slider img {
+	width: 99.49%;
+	height: 400px;
+}
+img {
+	height: 100%; /* dunno why I have to do this, imgs acting funny height-wise */
+}
+.content-wrap > div:first-of-type {
+	padding-bottom: 20px;
+}
+.featured-wrap > .row:first-child h2 {
+	line-height: 3em;
+}
+.featured-wrap > .row {
+	padding-bottom: 60px;
+}
+.featured-wrap > .row:first-child {
+	padding-bottom: 0;
+}
+.bottom-nav-wrap {
+	background-color: #FFFFFF;
+	border-top: 2px solid #E8E8E8;
+	border-bottom: 2px solid #E8E8E8;
+	padding: 40px;
+}
+.bottom-nav-wrap .row .columns div {
+	float: left;
+	width: 25%;
+	padding: 10px;
+	border-left: 2px solid #E8E8E8;
+	height: 11em;
+}
+.bottom-nav-wrap .row .columns div:last-child {
+	border-right: 2px solid #E8E8E8;
+}
+.bottom-nav-wrap ul {
+	list-style-type: none;
+	font-size: .8em;
+	font-weight: bold;
+}
+.bottom-nav-wrap img {
+	float: left;
+	padding-right: .5em;
+	height: 15px;
+}
+.bottom-nav-wrap a {
+	color: black;
+}
+.bottom-nav-wrap a:hover {
+	color: #737373;
+}
+.footer-wrap {
+	background-color: #FFFFFF;
+}
+.footer-wrap p {
+	font-size: 9px;
+	color: #5D5D5D;
+	padding-top: 1.25rem;
+}

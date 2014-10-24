@@ -38,3 +38,18 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+body {
+	@media #{$small-up} { 
+  		background: red;
+	}
+	@media #{$medium-up} { 
+  		background: orange;
+	} 
+	@media #{$large-up} { 
+	  	background: yellow; 
+	} 
+}
+
+
+ 

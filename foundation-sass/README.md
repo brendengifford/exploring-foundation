@@ -1,29 +1,21 @@
-# Foundation Compass Template
+#Foundation with Sass
+----
 
-The easiest way to get started with Foundation + Compass.
 
-## Requirements
+Usage Notes
+----
 
-  * Ruby 1.9+
-  * [Node.js](http://nodejs.org)
-  * [compass](http://compass-style.org/): `gem install compass`
-  * [bower](http://bower.io): `npm install bower -g`
+Installing it is tricky, but not impossible. You have to have a bunch of stuff already installed for it to work; Ruby, NodeJS, Git, Bower, Compass, Sass, and Grunt-CLI.
 
-## Quickstart
+Then you can run `gem install foundation` to install *their* CLI.
 
-  * [Download this starter compass project and unzip it](https://github.com/zurb/foundation-compass-template/archive/master.zip)
-  * Run `bower install` to install the latest version of Foundation
-  
-Then when you're working on your project, just run the following command:
+After that you create a project with `foundation new PROJECT_NAME`.
 
-```bash
-bundle exec compass watch
-```
+Note, creating a new project will create a directory with whatever the PROJECT_NAME is. Also, if Git is already tracking the directory that you install Foundation into, you'll need to cd into that folder and remove the .git/ directory that comes with Foundation. 
 
-## Upgrading
+Holy crap I just wasted a ton of time because I forgot the last step. Be sure to run Compass after the new poject install: `bundle` then `bundle exec compass watch`.
 
-If you'd like to upgrade to a newer version of Foundation down the road just run:
+So, it looks like they have a _settings.scss file which is basically their _foundation.scss file, but with everything commented out. Then if you want to tweak one of their styles, you come into the _settings.scss file and un-comment the line you want to change which overrides the foundation style, but doesn't actually alter it. Neat.
 
-```bash
-bower update
-```
+The SCSS compiles to a folder called stylesheets, but that folder doesn't show up in the Sublime Text side bar. That kind of weirded me out for a sec, but that's good because the compiled CSS shouldn't be touched. Note, you can write regular CSS in an SCSS file and it will compile fine.
+

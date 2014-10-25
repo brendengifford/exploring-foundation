@@ -49,15 +49,25 @@ You can change where the media break-points are by editing the _settings.scss fi
 
 <code>
 	body {
+
 		@media #{$small-up} { 
+
 	  		background: red;
+
 		}
+
 		@media #{$medium-up} { 
+
 	  		background: orange;
+
 		} 
+
 		@media #{$large-up} { 
+
 		  	background: yellow; 
+
 		} 
+		
 	}
 </code>
 

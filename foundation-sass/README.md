@@ -47,7 +47,6 @@ There is also `block-grid` styles that you can use by assigning classes like `sm
 
 You can change where the media break-points are by editing the _settings.scss file under "d. Media Query Ranges". Then, you can use the @media mixin to adjust an elements style for each range, like so:
 
-<code>
 	body {<br>
 		@media #{$small-up} { <br>
 	  		background: red;<br>
@@ -59,7 +58,6 @@ You can change where the media break-points are by editing the _settings.scss fi
 		  	background: yellow; <br>
 		} <br>
 	}
-</code>
 
 The `-up` part means that anything larger than that will inherit the style unless it's specifically overwritten. You can also use `-only` for that style to apply only to that break point. 
 

@@ -25,8 +25,7 @@ The SCSS compiles to a folder called stylesheets, but that folder doesn't show u
 
 I don't know what just happened. All of a sudden the bower_components directory was gone and compass shit the bed. I ran `foundation update` in the project directory and all seems to be well again...
 
-Compatibility between Mac and Windows
----- 
+**Compatibility between Mac and Windows**
 
 Getting everything set up on Windows was pretty easy, I was able to install all of the dependencies without issue in my Git Bash Shell, then pulled the Foundation branch which pulled everything down EXCEPT the bower_components folder which is set to be ignored in .gitignore. To recreate it, I ran `bower install foundation`. I also had to install bundler since that isn't already in Ruby I guess... `gem install bundler`. Then I was able to get compass to start watching the folder with `bundle` then `bundle exec compass watch`.
 
@@ -81,4 +80,27 @@ Checkout sandbox.html to see it, but it needs to be on a web server to work.
 **Utility Classes**
 
 Pretty easy to figure out, they have `clearfix`, `left`, `right` (floats), `radius` for rounded corners and `round` for no corners, then `text-left`, `text-right`, etc. for text-align stuff (also works with size, e.g. `medium-only-text-left`). They also have `hide` to hide an element.
+
+**Icon Fonts**
+
+They have icon fonts for Foundation, but they don't come with it for some reason. Anyway, you can get them here: http://zurb.com/playground/foundation-icon-fonts-3
+
+Unzip the file and move it to the project folder, then add `<link rel="stylesheet" href="foundation-icons/foundation-icons.css" />` to the `<head>` of the html pages.
+
+You can now add, for example: `<i class="fi-burst-new"></i>` to include an icon, where the class name is the name of the icon. Find a full list of icons in the example.html file that comes in the foundation-icons folder.
+
+**Navigation**
+
+There are a few navigation options, they all look boring and businessy, but the styles are probably easy to overwrite. 
+
+The Offcanvas is pretty cool. Used in conjunction with `show-for-small-only`, it could be a good solution for mobile navigation. 
+
+There's also a Top Bar navigation that is exactly what it sounds like, just a bar across the top that you can put navigation link in, including dropdowns. It stick to the top of the screen as you scroll down, or you can just have it at the top.
+
+A few others they have are:
+- Side Nav, which is a typical list style navigation. 
+- Magellan Sticky Nav, which links to sections of the page and scrolls down to them while staying stuck to the top.
+- Sub Nav, good for showing different states of a page, different sorting options or filters for instance.
+- Bread Crumb, you know, bread crumbs.
+- Pagination, and you also know this.
 

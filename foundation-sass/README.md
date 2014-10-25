@@ -33,7 +33,10 @@ Getting everything set up on Windows was pretty easy, I was able to install all 
 Okay, let's actually build something
 ----
 
-**Grid**
+I'll be going through their documentation and adding examples to sandbox.html. If you want to see what I'm talking about, just pull this branch and open it up in a web browser.
+
+
+**The Grid**
 
 Foundation works in a grid system with a `.row` class and `.columns` classes. The `.row` can be any height and looks like it can even be used as a page-wrapper class. The `.columns` class works in conjunction with `large-n`, `medium-n`, and `small-n`, where `n` is the number of columns for that break point. For example, if you have an element that will take up 6 columns on a large window, 8 columns on a medium, and 12 on a small, you'd give it a class of `large-6 medium-8 small-12 columns` (actually, you don't need the small-12 columns as it'll be 12 columns by default, it appears).
 
@@ -47,19 +50,17 @@ There is also `block-grid` styles that you can use by assigning classes like `sm
 
 You can change where the media break-points are by editing the _settings.scss file under "d. Media Query Ranges". Then, you can use the @media mixin to adjust an elements style for each range, like so:
 
-<code>
-	body {<br>
-		@media #{$small-up} { <br>
-	  		background: red;<br>
-		} <br>
-		@media #{$medium-up} {<br> 
-	  		background: orange;<br>
-		} <br>
-		@media #{$large-up} { <br>
-		  	background: yellow; <br>
-		} <br>
+	body {
+		@media #{$small-up} { 
+	  		background: red;
+		} 
+		@media #{$medium-up} { 
+	  		background: orange;
+		} 
+		@media #{$large-up} { 
+		  	background: yellow; 
+		} 
 	}
-</code>
 
 The `-up` part means that anything larger than that will inherit the style unless it's specifically overwritten. You can also use `-only` for that style to apply only to that break point. 
 
@@ -67,11 +68,15 @@ That also works with the showing/hiding of elements for certain break points. Th
 
 **More Responsive Goodies - Interchange**
 
-Interchange is just incredible. It allows you to swap out the content of an element per screen size. Also allows you to swap out the image src of an image based on the screen size or to swap out the BACKGROUND image on an element per screen size.
+Interchange is just incredible. It allows you to swap out the content of an element per screen size. Also allows you to swap out the image src of an image based on the screen size or to swap out the background image on an element per screen size.
 
 I want to look into this more, but research time is almost up! 
 
-http://foundation.zurb.com/docs/components/interchange.html
+*UPDATE:*
+
+Spent a little bit longer looking into it and came up with something pretty cool as an example of how interchange works. I made a CD Baby Store that will swap out which version it's using (full, album, or square) based on the screen size. Works pretty well and makes the CD Baby Store *actually* responsive!
+
+Checkout sandbox.html to see it, but it needs to be on a web server to work. 
 
 **Utility Classes**
 

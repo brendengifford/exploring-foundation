@@ -48,16 +48,16 @@ There is also `block-grid` styles that you can use by assigning classes like `sm
 You can change where the media break-points are by editing the _settings.scss file under "d. Media Query Ranges". Then, you can use the @media mixin to adjust an elements style for each range, like so:
 
 <code>
-	body {
-		@media #{$small-up} { 
-	  		background: red;
-		}
-		@media #{$medium-up} { 
-	  		background: orange;
-		} 
-		@media #{$large-up} { 
-		  	background: yellow; 
-		} 
+	body {<br>
+		@media #{$small-up} { <br>
+	  		background: red;<br>
+		} <br>
+		@media #{$medium-up} {<br> 
+	  		background: orange;<br>
+		} <br>
+		@media #{$large-up} { <br>
+		  	background: yellow; <br>
+		} <br>
 	}
 </code>
 

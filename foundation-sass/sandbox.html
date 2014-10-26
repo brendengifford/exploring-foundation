@@ -1,120 +1,601 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>$#@!</title>
-    <link rel="stylesheet" href="stylesheets/app.css" />
-    <link rel="stylesheet" href="foundation-icons/foundation-icons.css" />
-    <script src="bower_components/modernizr/modernizr.js"></script>
-  </head>
-  <body>
-    <div class="off-canvas-wrap" data-offcanvas>
-        <div class="inner-wrap">
-          <nav class="tab-bar show-for-small-only">
-            <section class="right-small">
-              <a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
-            </section>
 
-            <section class="left tab-bar-section">
-              <h1 class="title">Foundation Examples</h1>
-            </section>
-          </nav>
-          <!-- Off Canvas Menu -->
-          <aside class="right-off-canvas-menu">
-              <!-- whatever you want goes here -->
-              <ul class="off-canvas-list">
-                <li><a href="#">Item 0</a></li>
-                <li><a href="#">Item 1</a></li>
-                <li><a href="#">Item 2</a></li>
-                <li><a href="#">Item 3</a></li>
-                <li><a href="#">Item 4</a></li>
-                <li><a href="#">Item 5</a></li>
-                <li><a href="#">Item 6</a></li>
-                <li><a href="#">Item 7</a></li>
-                <li><a href="#">Item 8</a></li>
-                <li><a href="#">Item 9</a></li>
-              </ul>
-          </aside>
-          <!-- Main content -->
-          <div class="row">
-            <h2>Basic Columns</h2>
-            <div style="border: 1px solid red;" class="large-6 medium-8 columns">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quisquam ex officiis officia ab ipsam! Nam fuga commodi ea, consequatur soluta deserunt, nemo provident nisi, veniam ipsam iure ad doloribus.</div>
-            <div style="border: 1px solid black;" class="large-6 medium-4 columns">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum iure, molestiae modi omnis maxime ea officia eos consectetur voluptatem odio!</div>
-          </div>
-          <div class="row">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>$#@!</title>
+  <link rel="stylesheet" href="foundation-icons/foundation-icons.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" href="stylesheets/app.css" />
+  <script src="bower_components/modernizr/modernizr.js"></script>
+</head>
+
+<body>
+  <div class="page off-canvas-wrap" data-offcanvas>
+    <div class="inner-wrap">
+      <nav class="tab-bar show-for-small-only">
+        <section class="right-small">
+          <a class="right-off-canvas-toggle menu-icon" href="#">
+            <span></span>
+          </a>
+        </section>
+
+        <section class="left tab-bar-section">
+          <h1>Foundation Examples</h1>
+        </section>
+      </nav>
+      <!-- Off Canvas Menu -->
+      <aside class="right-off-canvas-menu">
+        <!-- whatever you want goes here -->
+        <ul class="off-canvas-list">
+          <li><a href="#">Item 0</a>
+          </li>
+          <li><a href="#">Item 1</a>
+          </li>
+          <li><a href="#">Item 2</a>
+          </li>
+          <li><a href="#">Item 3</a>
+          </li>
+          <li><a href="#">Item 4</a>
+          </li>
+          <li><a href="#">Item 5</a>
+          </li>
+          <li><a href="#">Item 6</a>
+          </li>
+          <li><a href="#">Item 7</a>
+          </li>
+          <li><a href="#">Item 8</a>
+          </li>
+          <li><a href="#">Item 9</a>
+          </li>
+          <li>
+            <div class="row collapse postfix">
+              <div class="small-9 columns">
+                <input type="text" placeholder="Search">
+              </div>
+              <div class="small-3 columns">
+                <a href="#" class="button postfix">Go</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </aside>
+      <!-- Main content -->
+      <div class="row">
+        <div class="medium-12 columns">
+          <header class="text-center">
+            <h1 id="thirdStop">Foundation Experiments and Examples</h1>
+          </header>
+          <div class="medium-6 columns">
             <hr>
-            <h2>Block Grid</h2>
-            <ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-8">
-              <li><img src="http://lorempixel.com/200/200"></li>
-              <li><img src="http://lorempixel.com/200/200"></li>
-              <li><img src="http://lorempixel.com/200/200"></li>
-              <li><img src="http://lorempixel.com/200/200"></li>
-              <li><img src="http://lorempixel.com/200/200"></li>
-              <li><img src="http://lorempixel.com/200/200"></li>
-              <li><img src="http://lorempixel.com/200/200"></li>
-              <li><img src="http://lorempixel.com/200/200"></li>
-            </ul>
+            <h2>Joyride</h2>
+            <div id="firstStop"><h3>All aboard for the Joyride!</h3></div>
+            <a class="small button joyride-btn" style="margin:50px auto;">Start Over</a>
           </div>
-          <div class="row">
+          <div class="medium-6 columns">
             <hr>
-            <h2>Interchange</h2>
-            <div class="large-12 columns">
-              <div data-interchange="[cd-baby-store/square.html, (small)], [cd-baby-store/album.html, (medium)], [cd-baby-store/full.html, (large)]">
-                <div data-alert class="alert-box secondary radius">
-                  If you're seeing this, something is wrong. Are you viewing this locally? I need to be on a web server to work.
-                  <a href="#" class="close">&times;</a>
+            <h2>Slick Carousel</h2>
+            <div class="slider">
+              <div><h3>Slide 1</h3>
+              <img src="http://lorempixel.com/500/200/fashion/6" alt=""></div>
+              <div><h3>Slide 2</h3>
+              <img src="http://lorempixel.com/500/200/fashion/2" alt=""></div>
+              <div><h3>Slide 3</h3>
+              <img src="http://lorempixel.com/500/200/fashion/8" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <hr>
+        <h2>Basic Columns</h2>
+        <div style="border: 1px solid red;" class="large-6 medium-8 columns">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quisquam ex officiis officia ab ipsam! Nam fuga commodi ea, consequatur soluta deserunt, nemo provident nisi, veniam ipsam iure ad doloribus.</div>
+        <div style="border: 1px solid black;" class="large-6 medium-4 columns">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum iure, molestiae modi omnis maxime ea officia eos consectetur voluptatem odio!</div>
+      </div>
+      <div class="row">
+        <hr>
+        <h2>Block Grid</h2>
+        <ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-8">
+          <li>
+            <img src="http://lorempixel.com/200/200">
+          </li>
+          <li>
+            <img src="http://lorempixel.com/200/200">
+          </li>
+          <li>
+            <img src="http://lorempixel.com/200/200">
+          </li>
+          <li>
+            <img src="http://lorempixel.com/200/200">
+          </li>
+          <li>
+            <img src="http://lorempixel.com/200/200">
+          </li>
+          <li>
+            <img src="http://lorempixel.com/200/200">
+          </li>
+          <li>
+            <img src="http://lorempixel.com/200/200">
+          </li>
+          <li>
+            <img src="http://lorempixel.com/200/200">
+          </li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="medium-6 columns">
+          <hr>
+          <h2><i class="fi-burst-new"></i> Icon Fonts</h2>
+          <p style="font-size: 3em;"><i class="fi-shopping-cart"></i><i class="fi-skull"></i><i class="fi-alert"></i><i class="fi-check"></i>
+          </p>
+          <p><a href="foundation-icons/preview.html">Full list of icons</a>
+          </p>
+        </div>
+        <div class="medium-6 columns">
+          <hr>
+          <h2>Icon Bar</h2>
+          <div class="icon-bar four-up">
+            <a class="item">
+              <i class="fi-shopping-cart"></i>
+            </a>
+            <a class="item">
+              <i class="fi-skull"></i>
+            </a>
+            <a class="item">
+              <i class="fi-alert"></i>
+            </a>
+            <a class="item">
+              <i class="fi-check"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="medium-6 columns">
+          <hr>
+          <h2>Button Groups</h2>
+          <ul class="button-group">
+            <li><a href="#" class="large button">Button 1</a>
+            </li>
+            <li><a href="#" class="large button">Button 2</a>
+            </li>
+            <li><a href="#" class="large button">Button 3</a>
+            </li>
+          </ul>
+        </div>
+        <div class="medium-6 columns">
+          <hr>
+          <h2>Button Dropdown</h2>
+          <button data-dropdown="drop" aria-controls="drop", aria-expanded="false" class="large alert round button dropdown">Dropdown Button</button><br>
+          <ul id="drop" data-dropdown-content class="f-dropdown" role="menu", aria-hidden="false" tabindex="-1">
+            <li><a href="#">This is a link</a></li>
+            <li><a href="#">This is another</a></li>
+            <li><a href="#">Yet another</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <hr>
+        <h2 id="secondStop">Interchange</h2>
+        <div class="large-12 columns">
+          <div data-interchange="[cd-baby-store/square.html, (small)], [cd-baby-store/album.html, (medium)], [cd-baby-store/full.html, (large)]">
+            <div data-alert class="alert-box secondary radius">
+              If you're seeing this, something is wrong. Are you viewing this locally? I need to be on a web server to work.
+              <a href="#" class="close">&times;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <hr>
+          <h2>Lightbox</h2>
+          <ul class="clearing-thumbs small-block-grid-2 medium-block-grid-4 large-block-grid-8" data-clearing>
+            <li><a class="th" href="http://lorempixel.com/400/400/nature/1"><img data-caption="Image Caption 1" src="http://lorempixel.com/100/100/nature/1"></a></li>
+            <li><a class="th" href="http://lorempixel.com/400/400/nature/2"><img data-caption="Image Caption 2" src="http://lorempixel.com/100/100/nature/2"></a></li>
+            <li><a class="th" href="http://lorempixel.com/400/400/nature/3"><img data-caption="Image Caption 3" src="http://lorempixel.com/100/100/nature/3"></a></li>
+            <li><a class="th" href="http://lorempixel.com/400/400/nature/4"><img data-caption="Image Caption 4" src="http://lorempixel.com/100/100/nature/4"></a></li>
+            <li><a class="th" href="http://lorempixel.com/400/400/nature/5"><img data-caption="Image Caption 5" src="http://lorempixel.com/100/100/nature/5"></a></li>
+            <li><a class="th" href="http://lorempixel.com/400/400/nature/6"><img data-caption="Image Caption 6" src="http://lorempixel.com/100/100/nature/6"></a></li>
+            <li><a class="th" href="http://lorempixel.com/400/400/nature/7"><img data-caption="Image Caption 7" src="http://lorempixel.com/100/100/nature/7"></a></li>
+            <li><a class="th" href="http://lorempixel.com/400/400/nature/8"><img data-caption="Image Caption 8" src="http://lorempixel.com/100/100/nature/8"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <hr>
+          <h2>Flex Video</h2>
+           <div class="large-8 medium-10 columns small-centered">
+             <div class="flex-video">
+                <iframe width="1280" height="720" src="//www.youtube-nocookie.com/embed/aDDl-IJ4FS4" frameborder="0" allowfullscreen></iframe>
+             </div>
+           </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <hr>
+          <h2>Forms</h2>
+          <div class="medium-6 columns">
+            <form data-abide>
+              <div class="row">
+                <div class="large-12 columns">
+                  <label>Input Label <small>*required</small>
+                    <input type="text" required placeholder="large-12.columns" />
+                  </label>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="medium-6 columns">
-              <hr>
-              <h2><i class="fi-burst-new"></i> Icon Fonts</h2>
-              <p style="font-size: 3em;"><i class="fi-shopping-cart"></i><i class="fi-skull"></i><i class="fi-alert"></i><i class="fi-check"></i></p>
-              <p><a href="foundation-icons/preview.html">Full list of icons</a></p>
-            </div>
-            <div class="medium-6 columns">
-              <hr>
-              <h2>Icon Bar</h2>
-              <div class="icon-bar four-up">
-                <a class="item">
-                  <i class="fi-shopping-cart"></i>
-                </a>
-                <a class="item">
-                  <i class="fi-skull"></i>
-                </a>
-                <a class="item">
-                  <i class="fi-alert"></i>
-                </a>
-                <a class="item">
-                  <i class="fi-check"></i>
-                </a>
+              <div class="row">
+                <div class="large-4 columns">
+                  <label>Email <small>*required</small>
+                    <input id="email1" type="email" required placeholder="large-4.columns" />
+                  </label>
+                </div>
+                <div class="large-4 columns">
+                  <label>Email again <small>*required</small>
+                    <input type="email" required data-equalto="email1" placeholder="large-4.columns" />
+                  </label>
+                </div>
+                <div class="large-4 columns">
+                  <div class="row collapse">
+                    <label>Input Label</label>
+                    <div class="small-9 columns">
+                      <input type="text" placeholder="small-9.columns" />
+                    </div>
+                    <div class="small-3 columns">
+                      <span class="postfix">.com</span>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
+              <div class="row">
+                <div class="large-12 columns">
+                  <label>Select Box
+                    <select>
+                      <option value="husker">Husker</option>
+                      <option value="starbuck">Starbuck</option>
+                      <option value="hotdog">Hot Dog</option>
+                      <option value="apollo">Apollo</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-6 columns">
+                  <label>Choose Your Favorite</label>
+                  <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Red</label>
+                  <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Blue</label>
+                </div>
+                <div class="large-6 columns">
+                  <label>Check these out</label>
+                  <input id="checkbox1" type="checkbox"><label for="checkbox1">Check 1</label>
+                  <input id="checkbox2" type="checkbox"><label for="checkbox2">Check 2</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-12 columns">
+                  <label>Textarea Label
+                    <textarea placeholder="small-12.columns"></textarea>
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-12 columns">
+                  <input type="submit" class="small button right" value="Send">
+                </div>
+              </div>
+            </form>
           </div>
-          <div class="row">
-            <hr>
-            <h2>Button Groups</h2>
-            <ul class="button-group">
-              <li><a href="#" class="large button">Button 1</a></li>
-              <li><a href="#" class="large button">Button 2</a></li>
-              <li><a href="#" class="large button">Button 3</a></li>
-            </ul>
+          <div class="medium-6 columns">
+            <h3>One-off inputs</h3>
+            <form>
+              <div class="row collapse">
+                <br>
+                <div class="small-3 large-2 columns">
+                  <span class="prefix">http://</span>
+                </div>
+                <div class="small-9 large-10 columns">
+                  <input type="text" placeholder="Enter your URL...">
+                </div>
+              </div>
+              <div class="row">
+                <br>
+                <div class="large-12 columns">
+                  <div class="row collapse">
+                    <div class="small-10 columns">
+                      <input type="text" placeholder="Hex Value">
+                    </div>
+                    <div class="small-2 columns">
+                      <a href="#" class="button postfix">Go</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <br>
+                <div class="large-6 columns">
+                  <div class="row collapse prefix-radius">
+                    <div class="small-3 columns">
+                      <span class="prefix">Label</span>
+                    </div>
+                    <div class="small-9 columns">
+                      <input type="text" placeholder="Value">
+                    </div>
+                  </div>
+                </div>
+                <div class="large-6 columns">
+                  <div class="row collapse postfix-radius">
+                    <div class="small-9 columns">
+                      <input type="text" placeholder="Value">
+                    </div>
+                    <div class="small-3 columns">
+                      <span class="postfix">Label</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <br>
+                <div class="large-6 columns">
+                  <div class="row collapse prefix-round">
+                    <div class="small-3 columns">
+                      <a href="#" class="button prefix">Go</a>
+                    </div>
+                    <div class="small-9 columns">
+                      <input type="text" placeholder="Value">
+                    </div>
+                  </div>
+                </div>
+                <div class="large-6 columns">
+                  <div class="row collapse postfix-round">
+                    <div class="small-9 columns">
+                      <input type="text" placeholder="Value">
+                    </div>
+                    <div class="small-3 columns">
+                      <a href="#" class="button postfix">Go</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
           </div>
-          <div class="row">
-          
-
         </div>
-
-        <!-- close the off-canvas menu -->
-        <a class="exit-off-canvas"></a>
       </div>
+      <div class="row">
+        <div class="medium-6 column">
+          <hr>
+          <h2>Modal Window</h2>
+          <a href="#" data-reveal-id="exampleModal" class="radius button">Click for Modalness</a>
+          <div id="exampleModal" class="reveal-modal" data-reveal>
+            <h2>The Modal Has Landed</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur quasi voluptatem quo ipsa non ipsum voluptatibus provident deleniti, dignissimos natus, dolorem, placeat exercitationem sunt sit quibusdam adipisci quaerat. Harum, est.</p>
+            <p>Doloribus provident, voluptate, sequi enim iusto velit facere animi praesentium doloremque optio, dolore laudantium accusantium, quas cum. Quaerat a recusandae error, voluptate ullam temporibus hic consectetur sunt, accusantium explicabo voluptatem.</p>
+            <p>Quidem culpa rem dolores deserunt tempora hic deleniti sit expedita vel illum, quisquam repellat error veritatis totam debitis magnam at nemo assumenda aspernatur fuga soluta minus reiciendis nisi repudiandae. Laudantium.</p>
+            <a class="close-reveal-modal">&#215;</a>
+          </div>
+        </div>
+        <div class="medium-6 column">
+          <hr>
+          <h2>Video Modal</h2>
+          <a href="#" data-reveal-id="videoModal" class="radius button">Click for Video Modalness</a>
+          <div id="videoModal" class="reveal-modal large" data-reveal>
+            <h2>Oh dear what the $#@! have we here?</h2>
+            <div class="flex-video">
+              <iframe width="1280" height="720" src="//www.youtube-nocookie.com/embed/AfuCLp8VEng" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <a class="close-reveal-modal">&#215;</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="medium-6 columns">
+          <hr>
+          <h2>Dropdowns</h2>
+          <button data-dropdown="drop1">Link Dropdown</button>
+          <ul id="drop1" class="f-dropdown" data-dropdown-content>
+            <li><a href="#">One Linksy</a></li>
+            <li><a href="#">Two Linksy</a></li>
+            <li><a href="#" style="color:red;">Red Linksy!!</a></li>
+            <li><a href="#" style="color:blue;">Blue Linksy!!!!!</a></li>
+          </ul>
+          <button data-dropdown="drop2">Content Dropdown</button>
+          <div id="drop2" data-dropdown-content class="f-dropdown content mega">
+            <p class="lead">Content drop downs?</p>
+            <small>Whaaaa?</small><br>
+            <img src="http://lorempixel.com/500/200/nature">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est repudiandae.</p>
+          </div>
+        </div>
+        <div class="medium-6 column">
+          <hr>
+          <h2>Tooltips</h2>
+          <ul>
+            <li>
+              <span data-tooltip class="has-tip tip-top" title="Poppin' off the top!">Hover for tip 1</span>
+            </li>
+            <li>
+              <span data-tooltip class="has-tip tip-bottom" title="Down low">Hover for tip 2</span>
+            </li>
+            <li>
+              <span data-tooltip class="has-tip tip-right" title="On the side">Hover for tip 3</span>
+            </li>
+            <li>
+              <span data-tooltip class="has-tip tip-left" title="Other side!">Hover for tip 4</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="medium-6 column">
+          <hr>
+          <h2>Alerts</h2>
+          <div data-alert class="alert-box">
+            This is a standart alert.
+            <a href="#" class="close">&times;</a>
+          </div>
+          <div data-alert class="alert-box success radius">
+            This is a success alert with a radius.
+            <a href="#" class="close">&times;</a>
+          </div>
+
+          <div data-alert class="alert-box warning round">
+            This is a warning alert that is rounded.
+            <a href="#" class="close">&times;</a>
+          </div>
+
+          <div data-alert class="alert-box info radius">
+            This is an info alert with a radius.
+            <a href="#" class="close">&times;</a>
+          </div>
+
+          <div data-alert class="alert-box alert round">
+            This is an alert - alert that is rounded.
+            <a href="#" class="close">&times;</a>
+          </div>
+
+          <div data-alert class="alert-box secondary">
+            This is a secondary alert.
+            <a href="#" class="close">&times;</a>
+          </div>
+        </div>
+        <div class="medium-6 columns">
+          <hr>
+          <h2>Pricing Tables</h2>
+          <div class="medium-6 columns">
+            <ul class="pricing-table">
+                <i class="fi-burst-new" style="color: green; position: absolute; top: -16px;left: 7px;font-size: 50px;"></i>
+              <li class="bullet-item"><img src="http://lorempixel.com/200/200/technics"></li>
+              <li class="title">Standard</li>
+              <li class="price">$99.99</li>
+              <li class="description">An awesome description</li>
+              <li class="bullet-item">5GB Storage</li>
+              <li class="bullet-item">20 Users</li>
+              <li class="cta-button"><a class="button" href="#">Buy Now</a></li>
+            </ul> 
+          </div>
+          <div class="medium-6 columns">
+            <ul class="pricing-table">
+                <i class="fi-burst-sale" style="color: red; position: absolute; top: -16px;left: 7px;font-size: 50px;"></i>
+              <li class="bullet-item"><img src="http://lorempixel.com/200/200/cats"></li>
+              <li class="title">Exotic</li>
+              <li class="price">$999.99</li>
+              <li class="description">An awkward description</li>
+              <li class="bullet-item">5MB Storage</li>
+              <li class="bullet-item">20 Users</li>
+              <li class="cta-button"><a class="button" href="#">Buy Now</a></li>
+            </ul> 
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <hr>
+          <h2>Accordion &amp; Tabs</h2>
+          <dl class="accordion" data-accordion>
+            <dd class="accordion-navigation">
+              <a href="#panel1">Accordion 1</a>
+              <div id="panel1" class="content active">
+                <dl class="tabs" data-tab>
+                  <dd class="active"><a href="#panel2-1">Tab 1</a></dd>
+                  <dd><a href="#panel2-2">Tab 2</a></dd>
+                  <dd><a href="#panel2-3">Tab 3</a></dd>
+                  <dd><a href="#panel2-4">Tab 4</a></dd>
+                </dl>
+                <div class="tabs-content">
+                  <div class="content active" id="panel2-1">
+                    <p>First panel content goes here...</p>
+                  </div>
+                  <div class="content" id="panel2-2">
+                    <p>Second panel content goes here...</p>
+                  </div>
+                  <div class="content" id="panel2-3">
+                    <p>Third panel content goes here...</p>
+                  </div>
+                  <div class="content" id="panel2-4">
+                    <p>Fourth panel content goes here...</p>
+                  </div>
+                </div>
+              </div>
+            </dd>
+            <dd class="accordion-navigation">
+              <a href="#panel2">Accordion 2</a>
+              <div id="panel2" class="content">
+                Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </dd>
+            <dd class="accordion-navigation">
+              <a href="#panel3">Accordion 3</a>
+              <div id="panel3" class="content">
+                <div class="small-8 medium-6 large-4 columns small-centered">
+                  <div class="flex-video">
+                    <iframe width="1280" height="720" src="//www.youtube-nocookie.com/embed/utddDvJ1Rvo" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </dd>
+          </dl>
+        </div>
+      </div>
+      <div class="row" data-equalizer>
+        <hr>
+        <h2>Equalizer</h2>
+        <div class="medium-3 columns"><div data-equalizer-watch class="panel">
+          <p>Nemo dolorum, molestias tenetur in, quisquam at, officiis consequuntur dolores eius unde corporis placeat praesentium illo laudantium consectetur ipsam. Earum, molestias, magnam! </p>
+        </div></div>
+        <div class="medium-3 columns"><div data-equalizer-watch class="panel">
+          <p>Omnis, molestiae, perspiciatis voluptates impedit reiciendis esse eum nam quo ab repellat corrupti ut officiis eaque molestias quod provident. At illum molestias, necessitatibus adipisci placeat est delectus. Facilis, officiis, reiciendis. Labore maxime ad assumenda, laborum! Nulla, aliquid reiciendis.
+          </p>
+        </div></div>
+        <div class="medium-3 columns"><div data-equalizer-watch class="panel callout">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim sint ipsum cumque earum fugit accusamus ex aperiam vero, magnam, veniam cum dignissimos laudantium, nam recusandae? Quaerat deserunt quisquam odio hic!</p>
+        </div></div>
+        <div class="medium-3 columns"><div data-equalizer-watch class="panel">
+          <p>Commodi eius reiciendis, explicabo similique consectetur quam id magni quidem, eaque nisi assumenda quod asperiores cumque harum cupiditate corporis cum beatae porro nihil ullam a, veritatis necessitatibus animi! Doloremque, laudantium. <span></p>
+        </div></div>
+      </div>
+      <div class="row text-center" style="padding-top:100px;">
+          <h2><em style="font-family: script;">fin</em></h2>
+      </div>
+      <!-- close the off-canvas menu -->
+      <a class="exit-off-canvas"></a>
     </div>
-  
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+    <!-- end inner-wrap -->
+  </div>
+  <!-- end off-canvas-wrap -->
+
+  <!-- Joyride list. Place at the bottom of your page but inside of the body tag --><div id="joyride-wrap">
+    <ol class="joyride-list" data-joyride>
+      <li data-id="firstStop" data-text="Go!" data-options="tip_location: bottom; prev_button: false">
+        <p>Take a friggin' tour why don'cha?</p>
+      </li>
+      <li data-id="secondStop" data-button="Next" data-prev-text="Prev" data-options="tip_location:top;tip_animation:fade">
+        <h4>Interchange!</h4>
+        <p>Using this with the CD Baby store is pretty sweet, just sayin'<br><small>(resize your browser)</small></p>
+      </li>
+      <li data-id="thirdStop" data-text="Next" data-prev-text="Prev">
+        <h4>The top!</h4>
+        <p>Remember being here? Oh the memories.</p>
+      </li>
+      <li data-button="End" data-prev-text="Prev">
+        <h4>All done!</h4>
+        <p>If you don't call a stop, it's just a modal.</p>
+      </li>
+    </ol>
+  </div>
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src="bower_components/foundation/js/foundation.min.js"></script>
+  <script src="js/foundation/foundation.abide.js"></script>
+  <script src="js/foundation/foundation.joyride.js"></script>
+  <script src="js/foundation/foundation.dropdown.js"></script>
+  <script src="js/foundation/foundation.equalizer.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    $(document).foundation('joyride', 'start');
+  </script>
+</body>
+
 </html>

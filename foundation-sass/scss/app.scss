@@ -39,6 +39,19 @@
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
 
+//  No one likes outlines. Especially in weird places like the Button Dropdown Menu.
+* {
+	outline: none;
+}
+
+// Some things there are no varibles for in the _settings.scss file, that bugs me. 
+
+.error input,
+.error textarea,
+.error select {
+  margin-bottom: 1rem;
+}
+
 body {
 	@media #{$small-up} { 
   		background: red;
@@ -50,6 +63,31 @@ body {
 	  	background: yellow; 
 	} 
 }
+.page {
+	padding-bottom: 300px;
+}
 
+// Slick Carousel
 
- 
+.slick-dots {
+	bottom: -14px;
+	right: -122px;
+	@media #{$medium-up} {
+		right: -113px;
+	}
+	@media #{$large-up} {
+		right: -187px;
+	}
+
+}
+.slick-dots li {
+	margin: 0;
+}
+.slick-dots li button:before {
+	opacity: 1;
+	font-size: 13px;
+	text-shadow: 0px 0px 5px #FFF;
+}
+.slick-dots li.slick-active button:before {
+	color: #0DB61B;
+}

@@ -95,33 +95,34 @@ $include-html-global-classes: $include-html-classes;
 // $font-weight-normal: normal !default;
 // $font-weight-bold: bold !default;
 
-// $white       : #FFFFFF;
-// $ghost       : #FAFAFA;
-// $snow        : #F9F9F9;
-// $vapor       : #F6F6F6;
-// $white-smoke : #F5F5F5;
-// $silver      : #EFEFEF;
-// $smoke       : #EEEEEE;
-// $gainsboro   : #DDDDDD;
-// $iron        : #CCCCCC;
-// $base        : #AAAAAA;
-// $aluminum    : #999999;
-// $jumbo       : #888888;
-// $monsoon     : #777777;
-// $steel       : #666666;
-// $charcoal    : #555555;
-// $tuatara     : #444444;
-// $oil         : #333333;
-// $jet         : #222222;
-// $black       : #000000;
+//The colors need to be on in order to be used elsewhere in this document
+$white       : #FFFFFF;
+$ghost       : #FAFAFA;
+$snow        : #F9F9F9;
+$vapor       : #F6F6F6;
+$white-smoke : #F5F5F5;
+$silver      : #EFEFEF;
+$smoke       : #EEEEEE;
+$gainsboro   : #DDDDDD;
+$iron        : #CCCCCC;
+$base        : #AAAAAA;
+$aluminum    : #999999;
+$jumbo       : #888888;
+$monsoon     : #777777;
+$steel       : #666666;
+$charcoal    : #555555;
+$tuatara     : #444444;
+$oil         : #333333;
+$jet         : #222222;
+$black       : #000000;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
-// $secondary-color: #e7e7e7;
-// $alert-color: #f04124;
-// $success-color: #43AC6A;
-// $warning-color: #f08a24;
-// $info-color: #a0d3e8;
+$primary-color: #0DB61B;
+$secondary-color: #e7e7e7;
+$alert-color: #f04124;
+$success-color: #008CBA;
+$warning-color: #f08a24;
+$info-color: #a0d3e8;
 
 // We use these to control various global styles
 // $body-bg: $white;
@@ -318,10 +319,10 @@ $include-html-global-classes: $include-html-classes;
 // $include-html-accordion-classes: $include-html-classes;
 
 // $accordion-navigation-padding: rem-calc(16);
-// $accordion-navigation-bg-color: $silver  ;
-// $accordion-navigation-hover-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -5%);
-// $accordion-navigation-active-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -3%);
-// $accordion-navigation-font-color: $jet;
+$accordion-navigation-bg-color: $success-color  ;
+$accordion-navigation-hover-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -8%);
+$accordion-navigation-active-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -5%);
+$accordion-navigation-font-color: $white;
 // $accordion-navigation-font-size: rem-calc(16);
 // $accordion-navigation-font-family: $body-font-family;
 
@@ -480,10 +481,10 @@ $include-html-global-classes: $include-html-classes;
 // $include-html-clearing-classes: $include-html-classes;
 
 // We use these to set the background colors for parts of Clearing.
-// $clearing-bg: $oil;
+ $clearing-bg: rgba(0,0,0,0.85);
 // $clearing-caption-bg: $clearing-bg;
-// $clearing-carousel-bg: rgba(51,51,51,0.8);
-// $clearing-img-bg: $clearing-bg;
+ $clearing-carousel-bg: $black;
+ $clearing-img-bg: transparent;
 
 // We use these to style the close button
 // $clearing-close-color: $iron;
@@ -496,7 +497,7 @@ $include-html-global-classes: $include-html-classes;
 // We use these to style captions
 // $clearing-caption-font-color: $iron;
 // $clearing-caption-font-size: 0.875em;
-// $clearing-caption-padding: 10px 30px 20px;
+ $clearing-caption-padding: 10px 30px 10px;
 
 // We use these to make the image and carousel height and style
 // $clearing-active-img-height: 85%;
@@ -982,10 +983,10 @@ $include-html-global-classes: $include-html-classes;
 // $price-table-margin-bottom: rem-calc(20);
 
 // We use these to control the title styles
-// $price-title-bg: $oil;
+$price-title-bg: $jumbo;
 // $price-title-padding: rem-calc(15 20);
 // $price-title-align: center;
-// $price-title-color: $smoke;
+$price-title-color: $smoke;
 // $price-title-weight: $font-weight-normal;
 // $price-title-size: rem-calc(16);
 // $price-title-font-family: $body-font-family;

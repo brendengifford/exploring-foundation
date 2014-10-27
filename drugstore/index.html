@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DrugStore</title>
-    <link href='http://fonts.googleapis.com/css?family=Ek+Mukta:200,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ek+Mukta:200,400,800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="foundation-icons/foundation-icons.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" href="stylesheets/app.css" />
@@ -14,14 +14,14 @@
     <div class="page off-canvas-wrap" data-offcanvas>
       <div class="inner-wrap">
         <nav class="tab-bar show-for-small-only">
-          <section class="right-small">
-            <a class="right-off-canvas-toggle menu-icon" href="#">
-              <span></span>
-            </a>
+          <section class="left-small">
+            <a class="left-off-canvas-toggle" href="#"><i class="fi-shopping-cart"></i></a>
           </section>
-
-          <section class="left tab-bar-section">
-            <h1>Foundation Examples</h1>
+          <section class="middle tab-bar-section">
+            <a href="#"><h1 class="logo"><span>DRUG</span><span>STORE</span></h1></a>
+          </section>
+          <section class="right-small">
+            <a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
           </section>
         </nav>
         <!-- Off Canvas Menu -->
@@ -46,33 +46,55 @@
             </li>
           </ul>
         </aside>
-        <header class="row hide-for-small-only">
+        <aside class="left-off-canvas-menu">
+          <!-- whatever you want goes here -->
+          <ul class="off-canvas-list">
+            <li><a href="#">REGISTRATION</a></li>
+            <li><a href="#">LOG IN</a></li>
+            <li><a href="#">DELIVERY</a></li>
+            <li><a href="#">MY ACCOUNT</a></li>
+            <li><a href="#">CHECKOUT</a></li>
+            <li>
+              <div class="row collapse postfix">
+                <div class="small-9 columns">
+                  <input type="text">
+                </div>
+                <div class="small-3 columns">
+                  <a href="#" class="button postfix">SEARCH</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </aside>
+        <header class="row hide-for-small-only collapse">
           <div class="large-6 medium-4 columns">
-            <h1 class="logo"><span>DRUG</span><span>STORE</span></h1>
-            <h2><small>THE BIGGEST CHOICE ON THE WEB</small></h2>
+            <a href="#">
+              <h1 class="logo"><span>DRUG</span><span>STORE</span></h1>
+              <h2><small>THE BIGGEST CHOICE ON THE WEB</small></h2>
+            </a>
           </div>
           <div class="large-6 medium-8 columns">
             <div class="row collapse">
               <div class="medium-10 columns">
                 <nav class="tools right">
                   <ul class="inline-list">
-                    <li><a href="#">REGISTRATION</a></li>
-                    <li><a href="#">LOG IN</a></li>
-                    <li><a href="#">DELIVERY</a></li>
-                    <li><a href="#">MY ACCOUNT</a></li>
-                    <li><a href="#">CHECKOUT</a></li>
+                    <li><a href="#" tabindex="1">REGISTRATION</a></li>
+                    <li><a href="#" tabindex="2">LOG IN</a></li>
+                    <li><a href="#" tabindex="3">DELIVERY</a></li>
+                    <li><a href="#" tabindex="4">MY ACCOUNT</a></li>
+                    <li><a href="#" tabindex="5">CHECKOUT</a></li>
                   </ul>
                 </nav>
               </div>
               <div class="medium-2 columns text-center right">
-                <a href="#" class="cart-btn round"><i class="fi-shopping-cart"></i></a>
+                <a href="#" class="cart-btn round" tabindex="6"><i class="fi-shopping-cart"></i></a>
               </div>
             </div>
             <div class="row collapse search">
-              <div class="medium-7 medium-offset-3 columns">
+              <div class="medium-6 medium-offset-4 columns">
                 <div class="row collapse postfix">
                   <div class="small-9 columns">
-                    <input type="text">
+                    <input type="text" tabindex="7">
                   </div>
                   <div class="small-3 columns">
                     <a href="#" class="button postfix">SEARCH</a>
@@ -82,12 +104,12 @@
             </div>
           </div>
         </header>
-        <div class="main-nav-wrap">  
-          <div class="row">
+        <div class="main-nav-wrap hide-for-small-only">  
+          <div class="row collapse">
             <div class="large-12 columns">
               <nav class="main-nav">
                 <ul class="button-group">
-                  <li><a href="#" class="large button">HOME</a></li>
+                  <li><a href="#" class="large button active">HOME</a></li>
                   <li><a href="#" class="large button">ABOUT</a></li>
                   <li><a href="#" class="large button">PORTFOLIO</a></li>
                   <li><a href="#" class="large button">STORE</a></li>
@@ -95,6 +117,139 @@
                   <li><a href="#" class="large button">CONTACT</a></li>
                 </ul>
               </nav>
+            </div>
+          </div>
+        </div>
+        <div class="main-content-wrap">
+          <div class="row">
+            <div class="medium-8 columns">  
+              <div class="slider">
+                <div class="slide">
+                  <a href="#">
+                    <div style="background-image: url('img/apple-pills-1.jpg');"><span class="banner-heading">10%OFF</span><p>NO MINIMUM<br>PURCHASE</p><small style="color:black;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dolorem cupiditate alias earum, neque rerum asperiores unde exercitationem, blanditiis quia rem impedit explicabo. Laborum magni, repellat vel, ducimus optio ea!</small><a href="#" class="button">SHOP NOW!</a></div>
+                  </a>
+                </div>
+                <div class="slide">
+                  <a href="#">
+                    <div style="background-image: url('img/apple-pills-2.jpg');"><span class="banner-heading">20%OFF</span><p>BUY THESE<br>THINGS</p><small style="color:black;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dolorem cupiditate alias earum, neque rerum asperiores unde exercitationem, blanditiis quia rem impedit explicabo. Laborum magni, repellat vel, ducimus optio ea!</small> <a href="#" class="button">SHOP NOW!</a></div>
+                  </a>
+                </div>
+                <div class="slide">
+                  <a href="#">
+                    <div style="background-image: url('img/apple-pills-3.jpg');"><span class="banner-heading">30%OFF</span><p>APPLES WITH<br>PILLS</p><small style="color:black;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dolorem cupiditate alias earum, neque rerum asperiores unde exercitationem, blanditiis quia rem impedit explicabo. Laborum magni, repellat vel, ducimus optio ea!</small> <a href="#" class="button">SHOP NOW!</a></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="medium-4 columns">
+              <div class="yellow-flowers"><span>WE HELP YOU<br></span><span>TO LIVE<br></span><span>A HEALTHY<br></span><span>LIFE<br></span></div>
+            </div>
+          </div>
+          <div class="row secondary">
+            <div class="medium-4 small-6 columns">
+              <div class="secondary-box" style="background-image: url(img/pills-1.png)"><div class="small-10 medium-7 columns right"><p class="secondary-header">Lorem ipsum dolor sit amet, consectetur adipisicing.</p><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum delectus voluptates.</small></div><a href="#" class="button">SHOP NOW!</a></div>
+            </div>
+            <div class="medium-4 small-6 columns">
+              <div class="secondary-box" style="background-image: url(img/pills-2.png)"><div class="small-10 medium-7 columns right"><p class="secondary-header">Blanditiis quidem minus eaque voluptas veritatis.</p><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi placeat magnam omnis ab labo.</small></div><a href="#" class="button">SHOP NOW!</a></div>
+            </div>
+            <div class="medium-4 columns">
+              <div class="secondary-box" style="background-image: url(img/pills-3.png)"><div class="small-8 medium-7 columns right"><p class="secondary-header">Mollitia ex tempore laborum, quo sunt esse unde.</p><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo inventore minus modi quo.</small></div><a href="#" class="button">SHOP NOW!</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="row featured-products">
+          <div class="large-12 columns">
+            <h2>FEATURED PRODUCTS</h2>
+            <div class="row">
+              <div class="large-2 medium-4 small-6 columns">
+                <div style="width: 100%; height:400px; background-image: url('http://lorempixel.com/300/300'); background-size: cover;"></div>
+              </div>
+              <div class="large-2 medium-4 small-6 columns">
+                <div style="width: 100%; height:400px; background-image: url('http://lorempixel.com/300/300'); background-size: cover;"></div>
+              </div>
+              <div class="large-2 medium-4 small-6 columns">
+                <div style="width: 100%; height:400px; background-image: url('http://lorempixel.com/300/300'); background-size: cover;"></div>
+              </div>
+              <div class="large-2 medium-4 small-6 columns">
+                <div style="width: 100%; height:400px; background-image: url('http://lorempixel.com/300/300'); background-size: cover;"></div>
+              </div>
+              <div class="large-2 medium-4 small-6 columns">
+                <div style="width: 100%; height:400px; background-image: url('http://lorempixel.com/300/300'); background-size: cover;"></div>
+              </div>
+              <div class="large-2 medium-4 small-6 columns">
+                <div style="width: 100%; height:400px; background-image: url('http://lorempixel.com/300/300'); background-size: cover;"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-2 medium-4 small-6 columns">
+                <div style="width: 100%; height:400px; background-image: url('http://lorempixel.com/300/300'); background-size: cover;"></div>
+              </div>
+              <div class="large-2 medium-4 small-6 columns">
+                <div style="width: 100%; height:400px; background-image: url('http://lorempixel.com/300/300'); background-size: cover;"></div>
+              </div>
+              <div class="large-2 medium-4 small-6 columns">
+                <div style="width: 100%; height:400px; background-image: url('http://lorempixel.com/300/300'); background-size: cover;"></div>
+              </div>
+              <div class="large-2 medium-4 small-6 columns">
+                <div style="width: 100%; height:400px; background-image: url('http://lorempixel.com/300/300'); background-size: cover;"></div>
+              </div>
+              <div class="large-2 medium-4 small-6 columns">
+                <div style="width: 100%; height:400px; background-image: url('http://lorempixel.com/300/300'); background-size: cover;"></div>
+              </div>
+              <div class="large-2 medium-4 small-6 columns">
+                <div style="width: 100%; height:400px; background-image: url('http://lorempixel.com/300/300'); background-size: cover;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-nav-wrap">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="large-3 medium-6 columns">
+                  <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">STORE</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACTS</a></li>
+                  </ul>
+              </div>
+              <div class="large-3 medium-6 columns">
+                  <ul>
+                    <li><a href="#">REGISTRATION</a></li>
+                    <li><a href="#">LOG IN</a></li>
+                    <li><a href="#">DELIVERY</a></li>
+                    <li><a href="#">MY ACCOUNT</a></li>
+                    <li><a href="#">CHECKOUT</a></li>
+                  </ul>
+              </div>
+              <div class="large-3 medium-6 columns">
+                  <ul>
+                    <li><a href="#">BABY &amp; CHILDCARE</a></li>
+                    <li><a href="#">COSMETICS</a></li>
+                    <li><a href="#">DIET &amp; NUTRITION</a></li>
+                    <li><a href="#">GIFTS &amp; SPECIALTY</a></li>
+                    <li><a href="#">HOUSEHOLD ITEMS</a></li>
+                    <li><a href="#">MEDICINE CABINET</a></li>
+                    <li><a href="#">NATURAL PRODUCTS</a></li>
+                    <li><a href="#">EXLUSIVES</a></li>                
+                  </ul>
+              </div>
+              <div class="large-3 medium-6 columns">
+                  <ul>
+                    <li><a href="#"><i class="fi-social-facebook"></i>FACEBOOK</a></li>
+                    <li><a href="#"><i class="fi-social-twitter"></i>TWITTER</a></li>
+                    <li><a href="#"><i class="fi-rss"></i>RSS</a></li>           
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-wrap">
+          <div class="row">
+            <div class="large-12 column">
+              <p>&copy; DrugStore 2014. All rights reserved for druggsssss....</p>
             </div>
           </div>
         </div>

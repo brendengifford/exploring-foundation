@@ -38,3 +38,106 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+body {
+	background-color: $white-smoke;
+}
+body {
+	@media #{$small-up} { 
+  		background: green;
+	}
+	@media #{$medium-up} { 
+  		background: orange;
+	} 
+	@media #{$large-up} { 
+	  	background: $white-smoke; 
+	} 
+}
+.page {
+	margin-top:2.5em;
+	@media #{$small-only} { 
+		margin-top:0;
+	}
+}
+.logo {
+	margin-top: .17em;
+	margin-bottom: 0;
+	line-height: 0.6em;
+	span:first-child {
+		font-weight: 800;
+	}
+	span:last-child {
+		font-weight: 200;
+		color: $primary-color;
+	}
+}
+.logo + h2 {
+	font-size: 20%;
+	margin-left: 0.3em;
+}
+.tools {
+	height: 1.5em;
+	a {
+		color: $black;
+		font-size: 0.6em;
+		padding-right: 13px;
+		margin-left: -13px;
+		border-right: 1px solid #CCC;
+	}
+	li:first-child a {
+		color: $primary-color;
+	}
+	li:last-child a {
+		border-right: none;
+		padding-right: 0;
+	}
+}
+.cart-btn {
+	margin-top: 0.2em;
+	background-color: $secondary-color;
+	color: $white;
+	display: inline-block;
+	height: 100%;
+	width: 56%;
+	text-align: center;
+	border-radius: 50px;
+	i {
+		font-size: 29px;
+	}
+}
+.row .row.search {
+	margin-top: -1.5em;
+	input, a {
+		height: 1.5125rem;
+		font-size: 0.6em;
+		line-height: 1.625rem;
+	}
+}
+.main-nav-wrap {
+	height: 3.84em;
+	background:-webkit-linear-gradient(bottom, #4B9C00, #67A70F);
+	background:-o-linear-gradient(bottom, #4B9C00, #67A70F);
+	background:linear-gradient(to top, #4B9C00, #67A70F);
+	ul {
+		width: 100%;
+	}	
+	ul li {
+		width: 100/6 * 1%; 
+	}
+	.button {
+	background:-webkit-linear-gradient(bottom, #4B9C00, #67A70F);
+	background:-o-linear-gradient(bottom, #4B9C00, #67A70F);
+	background:linear-gradient(to top, #4B9C00, #67A70F);
+	padding-top: 0.825rem;
+	padding-bottom: 0.8875rem;
+	width: 100%;
+			&:hover {
+			background:-webkit-linear-gradient(bottom, #377100, #52860C);
+			background:-o-linear-gradient(bottom, #377100, #52860C);
+			background:linear-gradient(to top, #377100, #52860C);
+		}
+	}
+	.button-group > li .button {
+		border-color: $primary-color;
+	}
+}

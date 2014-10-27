@@ -4,15 +4,104 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DrugStore</title>
+    <link href='http://fonts.googleapis.com/css?family=Ek+Mukta:200,800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="foundation-icons/foundation-icons.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" href="stylesheets/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
-    <div class="row">
-      
-    </div>
+    <div class="page off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+        <nav class="tab-bar show-for-small-only">
+          <section class="right-small">
+            <a class="right-off-canvas-toggle menu-icon" href="#">
+              <span></span>
+            </a>
+          </section>
+
+          <section class="left tab-bar-section">
+            <h1>Foundation Examples</h1>
+          </section>
+        </nav>
+        <!-- Off Canvas Menu -->
+        <aside class="right-off-canvas-menu">
+          <!-- whatever you want goes here -->
+          <ul class="off-canvas-list">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+            <li><a href="#">STORE</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li>
+              <div class="row collapse postfix">
+                <div class="small-9 columns">
+                  <input type="text">
+                </div>
+                <div class="small-3 columns">
+                  <a href="#" class="button postfix">SEARCH</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </aside>
+        <header class="row hide-for-small-only">
+          <div class="large-6 medium-4 columns">
+            <h1 class="logo"><span>DRUG</span><span>STORE</span></h1>
+            <h2><small>THE BIGGEST CHOICE ON THE WEB</small></h2>
+          </div>
+          <div class="large-6 medium-8 columns">
+            <div class="row collapse">
+              <div class="medium-10 columns">
+                <nav class="tools right">
+                  <ul class="inline-list">
+                    <li><a href="#">REGISTRATION</a></li>
+                    <li><a href="#">LOG IN</a></li>
+                    <li><a href="#">DELIVERY</a></li>
+                    <li><a href="#">MY ACCOUNT</a></li>
+                    <li><a href="#">CHECKOUT</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="medium-2 columns text-center right">
+                <a href="#" class="cart-btn round"><i class="fi-shopping-cart"></i></a>
+              </div>
+            </div>
+            <div class="row collapse search">
+              <div class="medium-7 medium-offset-3 columns">
+                <div class="row collapse postfix">
+                  <div class="small-9 columns">
+                    <input type="text">
+                  </div>
+                  <div class="small-3 columns">
+                    <a href="#" class="button postfix">SEARCH</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="main-nav-wrap">  
+          <div class="row">
+            <div class="large-12 columns">
+              <nav class="main-nav">
+                <ul class="button-group">
+                  <li><a href="#" class="large button">HOME</a></li>
+                  <li><a href="#" class="large button">ABOUT</a></li>
+                  <li><a href="#" class="large button">PORTFOLIO</a></li>
+                  <li><a href="#" class="large button">STORE</a></li>
+                  <li><a href="#" class="large button">BLOG</a></li>
+                  <li><a href="#" class="large button">CONTACT</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <!-- close the off-canvas menu -->
+        <a class="exit-off-canvas"></a>
+      </div><!-- end inner-wrap -->
+    </div><!-- end off-canvas-wrap -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>

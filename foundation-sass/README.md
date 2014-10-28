@@ -25,6 +25,10 @@ If the bower_components directory disappears and Compass shit the bed. Try runni
 
 Foundation includes Modernizr, which helps with compatability with older browsers. The entire library is included by default in the header, but it doesn't look like that's the best way to use it according to this video: https://www.youtube.com/watch?v=dXDSzYu_bwc Basically, you should just go to the Modernizr website and click off the style or whatever you want it to check for and copy the code generated at the bottom, then paste into the app.js file. Otherwise there's another http request for an entire library that may not be needed.
 
+**Normalize.css**
+
+It is included in their files, but they don't call it anywhere that I can find. You can easily make it into a SCSS partial by changing the file name to _normalize.scss and adding `@import "normalize";` to the top of app.scss.
+
 **Compatibility between Mac and Windows**
 
 Getting everything set up on Windows was pretty easy, I was able to install all of the dependencies without issue in my Git Bash Shell, then pulled the Foundation branch which pulled everything down EXCEPT the bower_components folder which is set to be ignored in .gitignore. To recreate it, I ran `bower install foundation`. I also had to install bundler since that isn't already in Ruby I guess... `gem install bundler`. Then I was able to get compass to start watching the folder with `bundle` then `bundle exec compass watch`.

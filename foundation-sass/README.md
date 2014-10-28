@@ -17,9 +17,13 @@ Then you create a project with `foundation new PROJECT_NAME`.
 
 Creating a new project will create a directory with whatever the PROJECT_NAME is. Also, if Git is already tracking the directory that you install Foundation into, you'll need to cd into that folder and remove the .git/ directory that comes with Foundation. 
 
-Holy crap I just wasted a ton of time because I forgot the last step. Be sure to run Compass after the new poject install: `bundle` then `bundle exec compass watch`. Otherwise the Sass won't compile and you'll get no styles in the browser.
+Be sure to run Compass after the new poject install: `bundle` then `bundle exec compass watch`. Otherwise the Sass won't compile and you'll get no styles in the browser.
 
-I don't know what just happened. All of a sudden the bower_components directory was gone and compass shit the bed. I ran `foundation update` in the project directory and all seems to be well again...
+If the bower_components directory disappears and Compass shit the bed. Try running `foundation update` in the project directory.
+
+**Modernizr**
+
+Foundation includes Modernizr, which helps with compatability with older browsers. The entire library is included by default in the header, but it doesn't look like that's the best way to use it according to this video: https://www.youtube.com/watch?v=dXDSzYu_bwc Basically, you should just go to the Modernizr website and click off the style or whatever you want it to check for and copy the code generated at the bottom, then paste into the app.js file. Otherwise there's another http request for an entire library that may not be needed.
 
 **Compatibility between Mac and Windows**
 

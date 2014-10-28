@@ -33,6 +33,8 @@ It is included in their files, but they don't call it anywhere that I can find. 
 
 Getting everything set up on Windows was pretty easy, I was able to install all of the dependencies without issue in my Git Bash Shell, then pulled the Foundation branch which pulled everything down EXCEPT the bower_components folder which is set to be ignored in .gitignore. To recreate it, I ran `bower install foundation`. I also had to install bundler since that isn't already in Ruby I guess... `gem install bundler`. Then I was able to get compass to start watching the folder with `bundle` then `bundle exec compass watch`.
 
+Nick needed to follow these instructions to get it to work on his box: http://blog.countableset.ch/2012/06/07/adding-git-to-windows-7-path/
+
 **Notes on Cloning this Branch**
 
 I'm realizing it's kind of a pain to see these files do anything so thought I should write this up. If you clone this branch and want to see these things work, you'll need to install Ruby, NodeJS, Git, Bower, Compass, Sass, and Grunt-CLI. Once those are installed, clone the repo with Git and run `bower install foundation` in the foundation-sass/ and the drugstore/ directory. Then run `bundle` and `bundle exec compass watch` in each and view in a web browser. Note, the Interchange example in foundation-sass/sandbox.html requires a web server to run. You can use WAMP for a local web server, then open the files using that. 
